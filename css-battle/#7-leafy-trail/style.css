@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: #0b2429;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container > :nth-child(1) {
+  border-radius: 65% 0 65% 0;
+  background: #1a4341;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 75px;
+}
+.container > :nth-child(2) {
+  border-radius: 65% 0 65% 0;
+  background: #998235;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.container > :nth-child(3) {
+  border-radius: 65% 0 65% 0;
+  background: #f3ac3c;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 75px;
+}
