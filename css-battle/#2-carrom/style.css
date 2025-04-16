@@ -1,0 +1,43 @@
+body {
+  background: #62374e;
+  margin: 0px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid red;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  padding: 50px; /* Distance from sides */
+  box-sizing: border-box;
+}
+
+.rectangle {
+  width: 50px;
+  height: 50px;
+  background-color: #fdc57b;
+}
+
+/* Positioning the rectangles in corners */
+.grid-container > :nth-child(1) {
+  justify-self: start;
+  align-self: start;
+}
+
+.grid-container > :nth-child(2) {
+  justify-self: end;
+  align-self: start;
+}
+
+.grid-container > :nth-child(3) {
+  justify-self: start;
+  align-self: end;
+}
+
+.grid-container > :nth-child(4) {
+  justify-self: end;
+  align-self: end;
+}
